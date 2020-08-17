@@ -3,134 +3,142 @@
   padding: 0;
 }
 
-html body {
-    height: 100%;
-}
-
-#main_body{
-    height: 100%;
+#main_body {
+  background-color: purple;
+  padding: calc(calc(100vh - 530px) / 2) calc(calc(100vw - 300px) / 2);
+  margin: auto;
+  height: 500px;
+  width: 300px;
+  min-height: 530px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
 }
 
 #output {
-  height: calc(100vh - 500px);
-  background-color: black;
-  min-height: 100px;
+  background-color: rgb(0, 0, 0);
+  border: solid 1px black;
 }
 
 #result {
-    text-align: right;
-    position: relative;
-    right: 10px;
-    padding: calc( calc(100vh - 615px) / 2) 0;
-}
-
-#result > p {
+  text-align: right;
+  font-size: 25px;
+  padding: 35.5px 20px;
   color: white;
-  font-size: 100px;
-  padding: 0;
-  margin: 0;
 }
 
-#input{
-    height: 500px;
-    background-color: orangered;
-    display: grid;
-    grid-template-columns: repeat(5, 20vw);
-    grid-template-rows: repeat(5, 100px);
-
+#input {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
+
 .input_button {
-    text-align: center;
-    font-size: 50px;
-    padding: 25px;
-    border: solid 1px black;
+  font-size: 25px;
+  text-align: center;
+  padding: 24.5px 0;
 }
-
 
 .numbers {
-    background-color: orchid;
+  background-color: steelblue;
+  border: solid 1px rgb(48, 105, 151);
 }
 
 .operations {
-    background-color: paleturquoise;
+  background-color: seagreen;
+  border: solid 1px rgb(37, 112, 70);
+}
+
+.blank {
+  background-color: steelblue;
+  border: solid 1px rgb(48, 105, 151);
 }
 
 .constants {
-    background-color: purple;
+  background-color: skyblue;
+  border: solid 1px rgb(108, 177, 204);
 }
 
+.numbers:hover {
+    background-color: rgb(39, 84, 121);
+}
 
+.operations:hover {
+  background-color: rgb(21, 94, 52);
+}
 
+.constants:hover {
+    background-color: rgb(85, 183, 221);
+}
 
 #one {
-    grid-column: 1/2;
-    grid-row: 2/3;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 #two {
-    grid-column: 2/3;
-    grid-row: 2/3;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 #three {
-    grid-column: 3/4;
-    grid-row: 2/3;
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 #four {
-    grid-column: 1/2;
-    grid-row: 3/4;
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
 
 #five {
-    grid-column: 2/3;
-    grid-row: 3/4;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
 #six {
-    grid-column: 3/4;
-    grid-row: 3/4;
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 #seven {
-    grid-column: 1/2;
-    grid-row: 4/5;
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 
 #eight {
-    grid-column: 2/3;
-    grid-row: 4/5;
+  grid-column: 2/3;
+  grid-row: 4/5;
 }
 
 #nine {
-
-    grid-column: 3/4;
-    grid-row: 4/5;
+  grid-column: 3/4;
+  grid-row: 4/5;
 }
 
 #zero {
-    grid-column: 2/3;
-    grid-row: 5/6;
+  grid-column: 2/3;
+  grid-row: 5/6;
 }
 
 #dot {
-    grid-column: 3/4;
-    grid-row: 5/6;
+  grid-column: 3/4;
+  grid-row: 5/6;
+}
+
+#equal {
+  grid-column: 4/6;
+  grid-row: 5/6;
 }
 
 #plus {
     grid-column: 4/5;
-    grid-row: 5/6;
-}
-
-#minus {
-    grid-column: 4/5;
     grid-row: 4/5;
 }
 
-#divide {
-    grid-column: 4/5;
-    grid-row: 2/3;
+#minus {
+    grid-column: 5/6;
+    grid-row: 4/5;
 }
 
 #multiply {
@@ -138,19 +146,24 @@ html body {
     grid-row: 3/4;
 }
 
+#divide {
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+#sqrt {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+#power {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
 #backspace {
     grid-column: 4/6;
     grid-row: 1/2;
-}
-
-#equal {
-    grid-column: 5/6;
-    grid-row: 5/6;
-}
-
-#factorial {
-    grid-column: 5/6;
-    grid-row: 3/4;
 }
 
 #pi {
@@ -163,22 +176,4 @@ html body {
     grid-row: 1/2;
 }
 
-#sqrt {
-    grid-column: 5/6;
-    grid-row: 4/5;
-}
 
-#power {
-    grid-column: 5/6;
-    grid-row: 2/3;
-}
-
-#blank1 {
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
-
-#blank2 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
