@@ -4,7 +4,7 @@
 }
 
 #main_body {
-  background-color: purple;
+  background-color: rgb(26, 24, 24);
   padding: calc(calc(100vh - 530px) / 2) calc(calc(100vw - 300px) / 2);
   margin: auto;
   height: 500px;
@@ -25,6 +25,7 @@
   font-size: 25px;
   padding: 35.5px 20px;
   color: white;
+  user-select: none;
 }
 
 #input {
@@ -37,6 +38,7 @@
   font-size: 25px;
   text-align: center;
   padding: 24.5px 0;
+  user-select: none;
 }
 
 .numbers {
@@ -44,14 +46,25 @@
   border: solid 1px rgb(48, 105, 151);
 }
 
+.numbers:hover {
+  background-color: rgb(39, 84, 121);
+}
+
+.numbers:active {
+  background-color: rgb(51, 100, 173);
+}
+
 .operations {
   background-color: seagreen;
   border: solid 1px rgb(37, 112, 70);
 }
 
-.blank {
-  background-color: steelblue;
-  border: solid 1px rgb(48, 105, 151);
+.operations:hover {
+  background-color: rgb(21, 94, 52);
+}
+
+.operations:active {
+  background-color: rgb(6, 49, 24);
 }
 
 .constants {
@@ -59,16 +72,17 @@
   border: solid 1px rgb(108, 177, 204);
 }
 
-.numbers:hover {
-    background-color: rgb(39, 84, 121);
-}
-
-.operations:hover {
-  background-color: rgb(21, 94, 52);
-}
-
 .constants:hover {
-    background-color: rgb(85, 183, 221);
+  background-color: rgb(85, 183, 221);
+}
+
+.constants:active {
+  background-color: rgb(48, 144, 182);
+}
+
+.blank {
+  background-color: steelblue;
+  border: solid 1px rgb(48, 105, 151);
 }
 
 #one {
@@ -132,48 +146,46 @@
 }
 
 #plus {
-    grid-column: 4/5;
-    grid-row: 4/5;
+  grid-column: 4/5;
+  grid-row: 4/5;
 }
 
 #minus {
-    grid-column: 5/6;
-    grid-row: 4/5;
+  grid-column: 5/6;
+  grid-row: 4/5;
 }
 
 #multiply {
-    grid-column: 4/5;
-    grid-row: 3/4;
+  grid-column: 4/5;
+  grid-row: 3/4;
 }
 
 #divide {
-    grid-column: 5/6;
-    grid-row: 3/4;
+  grid-column: 5/6;
+  grid-row: 3/4;
 }
 
 #sqrt {
-    grid-column: 5/6;
-    grid-row: 2/3;
+  grid-column: 5/6;
+  grid-row: 2/3;
 }
 
 #power {
-    grid-column: 4/5;
-    grid-row: 2/3;
+  grid-column: 4/5;
+  grid-row: 2/3;
 }
 
 #backspace {
-    grid-column: 4/6;
-    grid-row: 1/2;
+  grid-column: 4/6;
+  grid-row: 1/2;
 }
 
 #pi {
-    grid-column: 1/2;
-    grid-row: 1/2;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 #e {
-    grid-column: 2/3;
-    grid-row: 1/2;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
-
-
