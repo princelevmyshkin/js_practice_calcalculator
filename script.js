@@ -22,4 +22,81 @@ let power = document.getElementById("power");
 let clear = document.getElementById("clear");
 let result = document.getElementById("result");
 
+let write_output = function (output) {
+  result.innerHTML = output;
+};
 
+let zeronum = 0.1;
+
+var firstnum = Number(zeronum).toFixed(2);
+var secondnum = 0;
+var firstnummode = true;
+var secondnummode = false;
+var decimalmode = false;
+
+if (firstnummode) {
+  dot.onclick = function () {
+    decimalmode = true;
+    firstnum = firstnum * 1.0;
+    write_output(firstnum + ".");
+    console.log(decimalmode);
+  };
+  if (decimalmode == true) {
+      
+  } else {
+    one.onclick = function () {
+      firstnum = firstnum * 10 + 1;
+      write_output(firstnum);
+    };
+
+    two.onclick = function () {
+      firstnum = firstnum * 10 + 2;
+      write_output(firstnum);
+      console.log(decimalmode);
+    };
+
+    three.onclick = function () {
+      firstnum = firstnum * 10 + 3;
+      write_output(firstnum);
+    };
+
+    four.onclick = function () {
+      firstnum = firstnum * 10 + 4;
+      write_output(firstnum);
+    };
+
+    five.onclick = function () {
+      firstnum = firstnum * 10 + 5;
+      write_output(firstnum);
+    };
+
+    six.onclick = function () {
+      firstnum = firstnum * 10 + 6;
+      write_output(firstnum);
+    };
+
+    seven.onclick = function () {
+      firstnum = firstnum * 10 + 7;
+      write_output(firstnum);
+    };
+
+    eight.onclick = function () {
+      firstnum = firstnum * 10 + 8;
+      write_output(firstnum);
+    };
+
+    nine.onclick = function () {
+      firstnum = firstnum * 10 + 9;
+      write_output(firstnum);
+    };
+
+    zero.onclick = function () {
+      firstnum = firstnum * 10;
+      write_output(firstnum);
+    };
+  }
+}
+
+function newFunction() {
+  return 0;
+}
