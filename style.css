@@ -4,7 +4,7 @@
 }
 
 #main_body {
-  background-color: rgb(26, 24, 24);
+  background-color: rgb(116, 50, 50);
   padding: calc(calc(100vh - 530px) / 2) calc(calc(100vw - 300px) / 2);
   margin: auto;
   height: 500px;
@@ -12,7 +12,7 @@
   min-height: 530px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 200px 1fr;
 }
 
 #output {
@@ -23,15 +23,15 @@
 #result {
   text-align: right;
   font-size: 25px;
-  padding: 35.5px 20px;
+  padding: 80px 20px;
   color: white;
   user-select: none;
 }
 
 #input {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .input_button {
@@ -67,82 +67,64 @@
   background-color: rgb(6, 49, 24);
 }
 
-.constants {
-  background-color: skyblue;
-  border: solid 1px rgb(108, 177, 204);
-}
-
-.constants:hover {
-  background-color: rgb(85, 183, 221);
-}
-
-.constants:active {
-  background-color: rgb(48, 144, 182);
-}
-
-.blank {
-  background-color: steelblue;
-  border: solid 1px rgb(48, 105, 151);
-}
-
 #one {
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 1/2;
 }
 
 #two {
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 1/2;
 }
 
 #three {
   grid-column: 3/4;
-  grid-row: 2/3;
+  grid-row: 1/2;
 }
 
 #four {
   grid-column: 1/2;
-  grid-row: 3/4;
+  grid-row: 2/3;
 }
 
 #five {
   grid-column: 2/3;
-  grid-row: 3/4;
+  grid-row: 2/3;
 }
 
 #six {
   grid-column: 3/4;
-  grid-row: 3/4;
+  grid-row: 2/3;
 }
 
 #seven {
   grid-column: 1/2;
-  grid-row: 4/5;
+  grid-row: 3/4;
 }
 
 #eight {
   grid-column: 2/3;
-  grid-row: 4/5;
+  grid-row: 3/4;
 }
 
 #nine {
   grid-column: 3/4;
-  grid-row: 4/5;
+  grid-row: 3/4;
 }
 
 #zero {
   grid-column: 2/3;
-  grid-row: 5/6;
+  grid-row: 4/5;
 }
 
-#dot {
-  grid-column: 3/4;
-  grid-row: 5/6;
+#clear {
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 
 #equal {
-  grid-column: 4/6;
-  grid-row: 5/6;
+  grid-column: 3/4;
+  grid-row: 4/5;
 }
 
 #plus {
@@ -151,41 +133,6 @@
 }
 
 #minus {
-  grid-column: 5/6;
-  grid-row: 4/5;
-}
-
-#multiply {
   grid-column: 4/5;
   grid-row: 3/4;
-}
-
-#divide {
-  grid-column: 5/6;
-  grid-row: 3/4;
-}
-
-#sqrt {
-  grid-column: 5/6;
-  grid-row: 2/3;
-}
-
-#power {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
-
-#backspace {
-  grid-column: 4/6;
-  grid-row: 1/2;
-}
-
-#pi {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-#e {
-  grid-column: 2/3;
-  grid-row: 1/2;
 }
