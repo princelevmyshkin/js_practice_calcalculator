@@ -4,7 +4,7 @@
 }
 
 #main_body {
-  background-color: rgb(116, 50, 50);
+  background-image: linear-gradient(45deg, green,blue,indigo,violet);
   padding: calc(calc(100vh - 530px) / 2) calc(calc(100vw - 300px) / 2);
   margin: auto;
   height: 500px;
